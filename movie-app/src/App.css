@@ -1,0 +1,20 @@
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  border: 5px outset rgb(122, 194, 243);
+  border-radius: 8px;
+  padding: 0 5px;
+  margin: 0 5px;
+}

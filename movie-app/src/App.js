@@ -4,6 +4,7 @@ import axios from 'axios';
 import MovieList from './components/MovieList';
 import SelectMovies from './components/SelectMovies';
 import SelectedMovies from './components/SelectedMovies';
+import ConfirmMovies from './components/ConfirmMovies';
 import './App.css';
 
 const App = () => {
@@ -27,6 +28,10 @@ const App = () => {
 
   const handleChange = (e) => {
       setTitle(e.target.value);
+  }
+
+  const handleConfirm = () => {
+    setConfirm(true);
   }
 
   const selectMovie = (movie) => {
@@ -56,6 +61,13 @@ const App = () => {
             <SelectedMovies selectedMovies={selectedMovies}/> :
             <h2 className='center'>---No movies selected---</h2>
           }
+          {selectedMovies.length > 0 &&(
+            
+           <ConfirmMovies selectedMovies={selectedMovies}/>
+          
+          )
+          }
+          
         </div>
     </div>
   );

@@ -18,3 +18,13 @@ img {
   padding: 0 5px;
   margin: 0 5px;
 }
+.modal-content {
+  background-color: #7a7a76;
+}
+
+.btn-outline-light {
+  position: absolute;
+  margin-left: 20px;
+  width: 50%;
+  height: 58px;
+}

@@ -1,13 +1,9 @@
 import React from 'react';
 
-function SelectMovies(){
-    
-    const handleClick = (e) => {
-        e.target.disabled = true;
-    }
+const SelectMovies = () => {
     return (
         <div>
-            <button onClick={handleClick} className='btn btn-outline-info'> Add to Selected Movies </button>
+            <button className='btn btn-outline-info'> Add to Selected Movies </button>
         </div>
     )
 }

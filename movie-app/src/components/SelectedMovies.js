@@ -1,7 +1,7 @@
 import React from "react";
 import poster from "../poster.png";
 
-function SelectedMovies(props){
+const SelectedMovies = (props) => {
     return (
         <div className='d-flex justify-content-start m-3'>
             {props.selectedMovies.map((movie,index) => (

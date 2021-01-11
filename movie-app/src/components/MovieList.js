@@ -1,7 +1,7 @@
 import React from "react";
 import poster from "../poster.png";
 
-function MovieList(props){
+const MovieList = (props) => {
     const SelectMovies = props.selectMovies;
     return (
         <div className='image-container d-flex justify-content-start m-3'>

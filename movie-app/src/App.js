@@ -6,7 +6,7 @@ import SelectMovies from './components/SelectMovies';
 import SelectedMovies from './components/SelectedMovies';
 import './App.css';
 
-function App() {
+const App = () => {
   const [movies, setMovies] = useState([]);
   const [title,setTitle]= useState('');
   const [selectedMovies,setSelectedMovies] = useState([]);
@@ -25,11 +25,11 @@ function App() {
       setMovies(data)}});  
   }
 
-  function handleChange(e){
+  const handleChange = (e) => {
       setTitle(e.target.value);
   }
 
-  function selectMovie(movie){
+  const selectMovie = (movie) => {
     const newSelectedMovies = [...selectedMovies,movie];
     setSelectedMovies(newSelectedMovies);
     console.log('SELECTED MOVIES',selectedMovies)

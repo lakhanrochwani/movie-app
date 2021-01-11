@@ -20,7 +20,7 @@ function ConfirmMovies(props) {
           ))}</Modal.Body>
           <Modal.Footer>
             <Button className='confirm' variant="info" size="lg" block onClick={handleClose}>
-              Confirm
+              OK
             </Button>
           </Modal.Footer>
         </Modal>

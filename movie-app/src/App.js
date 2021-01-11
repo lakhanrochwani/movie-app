@@ -30,9 +30,6 @@ const App = () => {
       setTitle(e.target.value);
   }
 
-  const handleConfirm = () => {
-    setConfirm(true);
-  }
 
   const selectMovie = (movie) => {
     const newSelectedMovies = [...selectedMovies,movie];
@@ -61,6 +58,8 @@ const App = () => {
             <SelectedMovies selectedMovies={selectedMovies}/> :
             <h2 className='center'>---No movies selected---</h2>
           }
+          </div>
+          <div className='row'>
           {selectedMovies.length > 0 &&(
             
            <ConfirmMovies selectedMovies={selectedMovies}/>
